@@ -28,8 +28,6 @@ curl localhost:9000/startTask
 
 # Enjoy your output in ./compute-engine/output.txt
 
-## Can't believe this actually works
-
 ## SMALL LIMITATION - Restart all workers before starting a new query. I'm not really clearing the transient structures. In a prod scenario, I'd maintain a QueryVsTransientResult map and handle clearing it, which I'm not really doing rn.
 
 ## This design should be scalable. You can start 4,5,6 worker nodes.
